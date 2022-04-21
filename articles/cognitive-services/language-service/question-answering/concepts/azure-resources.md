@@ -30,7 +30,7 @@ When you move into the development phase of the project, you should consider:
 Typically there are three parameters you need to consider:
 
 * **The throughput you need**:
-    * The throughput for question answering is currently capped at 10 transactions per second for both management APIs and prediction APIs.
+    * The throughput for question answering is currently capped at 10 text records per second for both management APIs and prediction APIs.
     * This should also influence your Azure **Cognitive Search** SKU selection, see more details [here](../../../../search/search-sku-tier.md). Additionally, you may need to adjust Cognitive Search [capacity](../../../../search/search-capacity-planning.md) with replicas.
 
 * **Size and the number of knowledge bases**: Choose the appropriate [Azure search SKU](https://azure.microsoft.com/pricing/details/search/) for your scenario. Typically, you decide the number of knowledge bases you need based on number of different subject domains. One subject domain (for a single language) should be in one knowledge base.
